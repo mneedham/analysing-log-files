@@ -1,0 +1,16 @@
+filebeat.inputs:
+- type: filestream
+  id: access-logs
+  paths:
+    - "/var/log/apache2/*.log"
+
+output.kafka:
+  hosts: ["kafka:9093"]
+  topic: "topicname"
+  topics:
+    - topic: "error"
+      when.contains:
+        message: "ERR"
+    - topic: "access"
+      when contains:
+        message: "\"GET .*\" 200"
