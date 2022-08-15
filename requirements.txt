@@ -9,6 +9,7 @@ click==7.1.2
 colorclass==2.2.2
 colorlog==6.6.0
 croniter==1.3.5
+Faker==14.0.0
 faust==1.10.4
 frozenlist==1.3.1
 httpagentparser==1.9.3
@@ -17,12 +18,16 @@ kafka-python==1.4.7
 mode==4.3.2
 multidict==6.0.2
 mypy-extensions==0.4.3
+numpy==1.23.2
 opentracing==1.3.0
 pydicti==1.1.6
 python-dateutil==2.8.2
 pytz==2016.7
+pytz-deprecation-shim==0.1.0.post0
 robinhood-aiokafka==1.1.6
 six==1.16.0
 terminaltables==3.1.10
+tzdata==2022.2
+tzlocal==4.2
 venusian==1.2.0
 yarl==1.8.1
