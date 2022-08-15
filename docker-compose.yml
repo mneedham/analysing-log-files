@@ -28,6 +28,7 @@ services:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,OUTSIDE:PLAINTEXT
   filebeat:
     image: docker.elastic.co/beats/filebeat:8.3.3
+    container_name: filebeat
     volumes:
       - ./config/filebeat.yml:/usr/share/filebeat/filebeat.yml
       - ./access-logs:/var/log/apache2

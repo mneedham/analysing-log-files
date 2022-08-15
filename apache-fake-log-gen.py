@@ -84,7 +84,7 @@ while (flag):
     if args.sleep:
         increment = datetime.timedelta(seconds=args.sleep)
     else:
-        increment = datetime.timedelta(seconds=random.randint(30, 300))
+        increment = datetime.timedelta(seconds=random.uniform(0.1, 1))
     otime += increment
 
     ip = faker.ipv4()
