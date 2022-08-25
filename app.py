@@ -44,10 +44,10 @@ app = faust.App(
     value_serializer='json',
 )
 
-greetings_topic = app.topic('access')
+access_topic = app.topic('access')
 output_topic = app.topic("access-logs", value_serializer='json')
 
-@app.agent(greetings_topic)
+@app.agent(access_topic)
 async def greet(stream):
     async for event in stream:
         print("event", event["message"])
