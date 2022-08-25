@@ -5,7 +5,9 @@ from apachelogs import LogParser
 
 class AccessLogParser:
     def __init__(self):
-        self.log_parser = LogParser("%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"")
+        self.log_parser = LogParser(
+            "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\""
+        )
 
     def parse(self, event):
         output = self.log_parser.parse(event)
