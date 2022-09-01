@@ -1,2 +1,7 @@
 apachelogs==0.6.0
 httpagentparser==1.9.3
+faust-streaming==0.8.8
+Faker==14.2.0
+pytz==2022.2.1
+numpy==1.23.2
+tzlocal==4.2
