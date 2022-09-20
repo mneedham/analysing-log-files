@@ -32,3 +32,13 @@ services:
     volumes:
       - ./config/filebeat.yml:/usr/share/filebeat/filebeat.yml
       - ./access-logs:/var/log/apache2
+  pinot-controller:
+    image: apachepinot/pinot:0.11.0
+    command: "QuickStart -type EMPTY"
+    container_name: "pinot-controller"
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+      - "8000:8000"
+    depends_on:
+      - zookeeper

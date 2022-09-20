@@ -1,7 +1,7 @@
 import faust
 from access_log_parser import AccessLogParser
 
-parser = AccessLogParser()
+access_log_parser = AccessLogParser()
 
 app = faust.App(
     'access-logs',
@@ -10,15 +10,13 @@ app = faust.App(
 )
 
 access_topic = app.topic('access')
-enriched_topic = app.topic('enriched-access-logs')
+output_topic = app.topic("enriched-access-logs", value_serializer='json')
 
 @app.agent(access_topic)
 async def access_logs(stream):
     async for event in stream:
-        expanded_message = parser.parse(event["message"])
+        expanded_message = access_log_parser.parse(event["message"])
         event |= {"expandedMessage": expanded_message}
-        # print("event", event["message"])
-        await enriched_topic.send(
-            key=event["host"]["name"],
-            value=event
-        )
+        await output_topic.send(value=event, key=event["host"]["name"])
+
+        
