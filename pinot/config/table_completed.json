@@ -46,6 +46,42 @@
   "query": {},
   "ingestionConfig": {
     "transformConfigs": [
+      {
+        "columnName": "id",
+        "transformFunction": "JSONPATH(agent, '$.id')"
+      },
+      {
+        "columnName": "ts",
+        "transformFunction": "FromDateTime(JSONPATH(expandedMessage, '$.ts'), 'YYYY-MM-dd''T''HH:mm:ssZ')"
+      },
+      {
+        "columnName": "url",
+        "transformFunction": "JSONPATH(expandedMessage, '$.url')"
+      },
+      {
+        "columnName": "method",
+        "transformFunction": "JSONPATH(expandedMessage, '$.method')"
+      },
+      {
+        "columnName": "os.name",
+        "transformFunction": "JSONPATH(expandedMessage, '$.os.name')"
+      },
+      {
+        "columnName": "os.version",
+        "transformFunction": "JSONPATH(expandedMessage, '$.os.version')"
+      },
+      {
+        "columnName": "browser.name",
+        "transformFunction": "JSONPATH(expandedMessage, '$.browser.name')"
+      },
+      {
+        "columnName": "browser.version",
+        "transformFunction": "JSONPATH(expandedMessage, '$.browser.version')"
+      },
+      {
+        "columnName": "referer",
+        "transformFunction": "JSONPATH(expandedMessage, '$.referer')"
+      }
     ]
   },
   "isDimTable": false
