@@ -1,49 +1,49 @@
 {
-    "schemaName": "access_logs",
-    "dimensionFieldSpecs": [
-      {
-        "name": "id",
-        "dataType": "STRING"
-      },
-      {
-        "name": "url",
-        "dataType": "STRING"
-      },
-      {
-        "name": "method",
-        "dataType": "STRING"
-      },
-      {
-        "name": "message",
-        "dataType": "STRING"
-      },
-      {
-        "name": "os.name",
-        "dataType": "STRING"
-      },
-      {
-        "name": "os.version",
-        "dataType": "STRING"
-      },
-      {
-        "name": "browser.name",
-        "dataType": "STRING"
-      },
-      {
-        "name": "browser.version",
-        "dataType": "STRING"
-      },
-      {
-        "name": "referer",
-        "dataType": "STRING"
-      }            
-    ],
-    "dateTimeFieldSpecs": [
-      {
-        "name": "ts",
-        "dataType": "TIMESTAMP",
-        "format": "1:MILLISECONDS:EPOCH",
-        "granularity": "1:MILLISECONDS"
-      }
-    ]
-  }
+  "schemaName": "access_logs",
+  "dimensionFieldSpecs": [
+    {
+      "name": "id",
+      "dataType": "STRING"
+    },
+    {
+      "name": "url",
+      "dataType": "STRING"
+    },
+    {
+      "name": "method",
+      "dataType": "STRING"
+    },
+    {
+      "name": "message",
+      "dataType": "STRING"
+    },
+    {
+      "name": "os.name",
+      "dataType": "STRING"
+    },
+    {
+      "name": "os.version",
+      "dataType": "STRING"
+    },
+    {
+      "name": "browser.name",
+      "dataType": "STRING"
+    },
+    {
+      "name": "browser.version",
+      "dataType": "STRING"
+    },
+    {
+      "name": "referer",
+      "dataType": "STRING"
+    }
+  ],
+  "dateTimeFieldSpecs": [
+    {
+      "name": "ts",
+      "dataType": "TIMESTAMP",
+      "format": "1:MILLISECONDS:EPOCH",
+      "granularity": "1:MILLISECONDS"
+    }
+  ]
+}
