@@ -1,5 +1,14 @@
 # Real-Time Analytics on HTTP Access Logs
 
+Clone repository:
+
+```
+git clone git@github.com:mneedham/analysing-log-files.git
+cd analysing-log-files
+```
+
+Launch Docker Compose:
+
 ```
 docker-compose up
 ```
