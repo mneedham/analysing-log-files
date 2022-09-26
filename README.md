@@ -7,7 +7,7 @@ docker-compose up
 Generate log files:
 
 ```bash
-
+python apache-fake-log-gen.py
 ```
 
 ```bash
