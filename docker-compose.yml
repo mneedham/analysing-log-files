@@ -42,3 +42,9 @@ services:
       - "8000:8000"
     depends_on:
       - zookeeper
+  superset:
+    image: apachepinot/pinot-superset:latest
+    container_name: "superset"
+    restart: unless-stopped
+    ports:
+      - "8088:8088"    

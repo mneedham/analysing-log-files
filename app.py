@@ -17,7 +17,6 @@ async def access_logs(stream):
     async for event in stream:
         expanded_message = parser.parse(event["message"])
         event |= {"expandedMessage": expanded_message}
-        # print("event", event["message"])
         await enriched_topic.send(
             key=event["host"]["name"],
             value=event
