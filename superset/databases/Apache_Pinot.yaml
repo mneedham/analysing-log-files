@@ -1,0 +1,15 @@
+database_name: Apache Pinot
+sqlalchemy_uri: pinot+http://pinot-controller:8000/query/sql?controller=http%3A%2F%2Fpinot-controller%3A9000%2F
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_file_upload: false
+extra:
+  metadata_params: {}
+  engine_params: {}
+  metadata_cache_timeout: {}
+  schemas_allowed_for_file_upload: []
+uuid: ffae3464-03c0-4fc8-8cca-a907e0ebe614
+version: 1.0.0

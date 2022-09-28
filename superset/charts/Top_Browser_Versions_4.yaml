@@ -1,0 +1,33 @@
+slice_name: Top Browser Versions
+viz_type: dist_bar
+params:
+  datasource: 1__table
+  viz_type: dist_bar
+  slice_id: 4
+  granularity_sqla: ts
+  time_range: No filter
+  metrics:
+  - count
+  adhoc_filters: []
+  groupby:
+  - browser.name
+  - browser.version
+  columns: []
+  row_limit: 10
+  order_desc: true
+  color_scheme: supersetColors
+  show_legend: true
+  rich_tooltip: true
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds:
+  - null
+  - null
+  bottom_margin: auto
+  x_ticks_layout: auto
+  extra_form_data: {}
+  dashboards:
+  - 1
+cache_timeout: null
+uuid: 0874b539-9442-4094-9803-12de0c096405
+version: 1.0.0
+dataset_uuid: 15aa5ef1-f8a6-474c-b3d6-45832b91c675

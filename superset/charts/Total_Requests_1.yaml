@@ -1,0 +1,30 @@
+slice_name: Total Requests
+viz_type: big_number
+params:
+  datasource: 1__table
+  viz_type: big_number
+  slice_id: 1
+  granularity_sqla: ts
+  time_grain_sqla: P1D
+  time_range: No filter
+  metric: count
+  adhoc_filters: []
+  show_trend_line: true
+  start_y_axis_at_zero: true
+  color_picker:
+    r: 0
+    g: 122
+    b: 135
+    a: 1
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  rolling_type: None
+  extra_form_data: {}
+  dashboards:
+  - 1
+cache_timeout: null
+uuid: 18bc1e14-c4e0-4412-a6c6-51f56467fe46
+version: 1.0.0
+dataset_uuid: 15aa5ef1-f8a6-474c-b3d6-45832b91c675

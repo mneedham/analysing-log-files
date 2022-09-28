@@ -1,0 +1,32 @@
+slice_name: Requests
+viz_type: pie
+params:
+  datasource: 1__table
+  viz_type: pie
+  granularity_sqla: ts
+  time_range: No filter
+  groupby:
+  - method
+  metric: count
+  adhoc_filters: []
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: supersetColors
+  show_labels_threshold: 5
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  label_type: key
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  outerRadius: 70
+  innerRadius: 30
+  extra_form_data: {}
+  dashboards:
+  - 1
+cache_timeout: null
+uuid: 3fcfc0d0-6df0-4bcd-8c72-228a8ea5639b
+version: 1.0.0
+dataset_uuid: 15aa5ef1-f8a6-474c-b3d6-45832b91c675
